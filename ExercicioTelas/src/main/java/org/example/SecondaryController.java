@@ -1,0 +1,14 @@
+package org.example;
+
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+
+public class SecondaryController {
+
+    @FXML
+    private void btnTrocarTela2() throws IOException {
+        App.setRoot("tertiary");
+    }
+}
