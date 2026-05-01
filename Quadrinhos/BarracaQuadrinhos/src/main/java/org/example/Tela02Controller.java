@@ -52,51 +52,29 @@ public class Tela02Controller {
         if (contador == 1) {
             actualImage = new Image(String.valueOf(getClass().getResource("/imagesBarraca/img1.png")));
             images.setImage(actualImage);
-            actualMessage.setText(messages[contador]);
         }
 
         if (contador == 2) {
             actualImage = new Image(String.valueOf(getClass().getResource("/imagesBarraca/img2.png")));
             images.setImage(actualImage);
-            actualMessage.setText(messages[contador]);
-        }
-
-        if (contador == 3) {
-            actualMessage.setText(messages[contador]);
-        }
-
-        if (contador == 4) {
-            actualMessage.setText(messages[contador]);
-        }
-
-        if (contador == 5) {
-            actualMessage.setText(messages[contador]);
-        }
-
-        if (contador == 6) {
-            actualMessage.setText(messages[contador]);
         }
 
         if (contador == 7) {
             actualImage = new Image(String.valueOf(getClass().getResource("/imagesBarraca/img3.png")));
             images.setImage(actualImage);
-            actualMessage.setText(messages[contador]);
-        }
-
-        if (contador == 8) {
-            actualMessage.setText(messages[contador]);
         }
 
         if (contador == 9) {
             actualImage = new Image(String.valueOf(getClass().getResource("/imagesBarraca/img4.png")));
             images.setImage(actualImage);
-            actualMessage.setText(messages[contador]);
         }
 
         if (contador == 10) {
             actualImage = new Image(String.valueOf(getClass().getResource("/imagesBarraca/img5.png")));
             images.setImage(actualImage);
         }
+
+        actualMessage.setText(messages[contador]);
 
     }
 
