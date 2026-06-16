@@ -1,0 +1,15 @@
+module org.example {
+    requires javafx.controls;
+    requires javafx.fxml;
+    requires java.sql;
+
+    opens org.example.model to javafx.fxml, javafx.base;
+    opens org.example to javafx.fxml;
+    exports org.example;
+    exports org.example.dao;
+    opens org.example.dao to javafx.fxml;
+    exports org.example.conexao;
+    opens org.example.conexao to javafx.fxml;
+    exports org.example.controller;
+    opens org.example.controller to javafx.fxml;
+}

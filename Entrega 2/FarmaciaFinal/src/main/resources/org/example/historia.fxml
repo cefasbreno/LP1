@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #141759;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.HistoriaController">
+   <children>
+      <ImageView fx:id="imgCena" fitHeight="300.0" fitWidth="600.0" layoutX="149.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblTexto" alignment="CENTER" layoutX="36.0" layoutY="324.0" prefHeight="146.0" prefWidth="826.0" style="-fx-background-color: #141759;" text="..." textAlignment="CENTER" textFill="#4bf2f2" wrapText="true">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <HBox fx:id="hBox" alignment="CENTER" layoutX="68.0" layoutY="495.0" prefHeight="18.0" prefWidth="762.0" spacing="250.0">
+         <children>
+            <Button fx:id="btnDia" mnemonicParsing="false" onAction="#selecionarDia" style="-fx-background-color: #163E73;" text="Dia" textFill="#4bf2f2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnContinuar" mnemonicParsing="false" onAction="#avancarCena" style="-fx-background-color: #163E73;" text="Continuar" textFill="#4bf2f2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNoite" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#selecionarNoite" style="-fx-background-color: #163E73;" text="Noite" textFill="#4bf2f2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

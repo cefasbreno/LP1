@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #141759;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.Tela02Controller">
+    <children>
+        <Label layoutX="170.0" layoutY="53.0" text="INSIRA O NOME DOS PERSONAGENS" textFill="#4bf2f2">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="tblView" layoutX="150.0" layoutY="110.0" prefHeight="308.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="colID" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="colDona" prefWidth="183.0" text="Dona" />
+                <TableColumn fx:id="colAjudante1" prefWidth="183.0" text="Ajudante 1" />
+                <TableColumn fx:id="colAjudante2" prefWidth="183.0" text="Ajudante 2" />
+            </columns>
+        </TableView>
+
+        <HBox layoutX="250.0" layoutY="438.0" prefHeight="30.0" prefWidth="400.0" spacing="10">
+            <children>
+                <TextField fx:id="txtDona" promptText="Dona" />
+                <TextField fx:id="txtAjudante1" promptText="Ajudante 1" />
+                <TextField fx:id="txtAjudante2" promptText="Ajudante 2" />
+            </children>
+        </HBox>
+
+        <Button fx:id="btn02" layoutX="381.0" layoutY="488.0" mnemonicParsing="false" onAction="#avancarParaHistoria" style="-fx-background-color: #163E73;" text="Continuar" textFill="#4bf2f2">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn04" layoutX="638.0" layoutY="488.0" mnemonicParsing="false" onAction="#Atualizar" style="-fx-background-color: #163E73;" text="Atualizar" textFill="#4bf2f2">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn03" layoutX="137.0" layoutY="488.0" mnemonicParsing="false" onAction="#Deletar" style="-fx-background-color: #163E73;" text="Deletar" textFill="#4bf2f2">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
